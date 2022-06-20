@@ -19,5 +19,14 @@
 // }
 
 // var infoForm = document.querySelectorAll('.info-form').value
-var btnEnviar = document.querySelector('#btn-enviar')
-console.log(btnEnviar)
+// var btnEnviar = document.querySelector('#btn-enviar')
+// console.log(btnEnviar)
+
+var numero1 = parseInt(document.querySelector('#numero1').value)
+console.log('clicou')
+
+
+
+// var numero2 = parseInt(document.querySelector('#numero2').value)
+// var resultado = parseInt(document.querySelector('p').value)
+
