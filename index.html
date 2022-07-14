@@ -5,36 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="output">
-            <div class="previous-operand"></div>
-            <div class="current-operand"></div>
+    <div class="container">
+        <div class="tela-resultado">
+            <p></p>
+        </div>
+    
+        <div class="box-clear">
+            <button id="btn-clear">C</button>
         </div>
 
-        <button class="span-two">AC</button>
-        <button>DEL</button>
-        <button class="operator">/</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="operator">*</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="operator">+</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="operator">-</button>
-        <button class="span-two">.</button>
-        <button>0</button>
-        <button class="operator">=</button>
+        <div class="number-calculator">
+            <div class="btn-number">
+                <div class="box-btn">
+                    <button class="num">1</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">2</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">3</button>
+                </div>
+                <div class="box-operator">
+                    <button class="operator" id="soma">+</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">4</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">5</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">6</button>
+                </div>
+                <div class="box-operator">
+                    <button class="operator" id="subtracao">-</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">7</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">8</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">9</button>
+                </div>
+                <div class="box-operator">
+                    <button class="operator" id="multiplicacao">*</button>
+                </div>
+                <div class="box-btn">
+                    <button class="num">0</button>
+                </div>
+                <div class="box-btn btn-igual">
+                    <button id="igual">=</button>
+                </div>
+                <div class="box-operator">
+                    <button class="operator" id="divisao">/</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
