@@ -1,58 +1,185 @@
-body {
+* {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body .container {
-  width: 100%;
-  max-width: 1200px;
-  color: #263238;
-  margin: 0 auto;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(0%, #e05fb5), to(rgba(166, 0, 255, 0.493435)));
+  background: linear-gradient(180deg, #020024 0%, #e05fb5 0%, rgba(166, 0, 255, 0.493435) 100%);
 }
 
-body .container .info-form {
-  margin: 40px 0;
+.container {
+  width: calc(100% - 40px);
+  max-width: 400px;
+  margin: 60px auto;
+  border-radius: 40px;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(0%, #e05fb5), to(rgba(166, 0, 255, 0.493435)));
+  background: linear-gradient(180deg, #020024 0%, #e05fb5 0%, rgba(166, 0, 255, 0.493435) 100%);
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+}
+
+.container h1 {
   text-align: center;
-  font-family: sans-serif;
+  color: #540a99;
+  margin-top: 40px;
 }
 
-body .container .info-form h1 {
-  font-size: 2.5rem;
-}
-
-body .container .info-form h2 {
-  font-size: 1.5rem;
-  font-weight: 200;
-}
-
-body .container form {
+.container .tela-resultado {
   width: 100%;
-  max-width: 1100px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-}
-
-body .container form .info {
+  padding-right: 20px;
   margin-bottom: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 0px 5px 2px #93028b;
+          box-shadow: 1px 0px 5px 2px #93028b;
+  background-color: #fce4ec;
 }
 
-body .container form .info label {
-  font-size: 1.2rem;
+.container .tela-resultado p {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #000;
 }
 
-body .container form .info input {
+.container .box-clear button {
   width: 100%;
-  max-width: 100px;
+  max-width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 0;
+  background-color: #da34d1;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 0px 5px 2px #93028b;
+          box-shadow: 1px 0px 5px 2px #93028b;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.container .box-clear button:hover {
+  background-color: #f388ee;
+}
+
+.container .box-clear button:active {
+  background-color: #da34d1;
+}
+
+.container .number-calculator {
+  width: 100%;
+  margin: 10px auto 0;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.container .number-calculator .btn-number {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.container .number-calculator .btn-number .box-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .number-calculator .btn-number .box-btn .num {
+  -webkit-box-shadow: 1px 0px 5px 2px #93028b;
+          box-shadow: 1px 0px 5px 2px #93028b;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.container .number-calculator .btn-number .btn-igual {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+.container .number-calculator .btn-number .btn-igual #igual {
+  max-width: unset;
+  font-size: 1.25rem;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 0px 5px 2px #93028b;
+          box-shadow: 1px 0px 5px 2px #93028b;
+}
+
+.container .number-calculator .operator {
+  background-color: #93028b;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  -webkit-box-shadow: 0px 0px 6px black;
+          box-shadow: 0px 0px 6px black;
+}
+
+.container .number-calculator .operator:hover {
+  background-color: #ce08c4;
+}
+
+.container .number-calculator .operator:active {
+  background-color: #93028b;
+}
+
+.container .number-calculator button {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 0;
+  background-color: #da34d1;
+  cursor: pointer;
+}
+
+.container .number-calculator button:hover {
+  background-color: #f388ee;
+}
+
+.container .number-calculator button:active {
+  background-color: #da34d1;
 }
 /*# sourceMappingURL=style.css.map */
